@@ -3,6 +3,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMakeModules)
 project(lyli C CXX)
 
 set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall -Wstrict-aliasing -Wextra")
+set(CMAKE_EXPORT_COMPILE_COMMANDS true)
 
 ################
 # Dependencies #
@@ -11,6 +12,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall -Wstrict-aliasing -Wextra")
 # GUI (optional)
 find_package(Qt5Core)
 find_package(Qt5Widgets)
+# add_definitions(-DQT_NO_KEYWORDS)
 
 # minimal dependencies
 find_package(JsonCpp REQUIRED 1.4.0)

@@ -36,6 +36,8 @@
 #include <json/value.h>
 #include <json/writer.h>
 
+#include <unistd.h>
+
 #include <camera.h>
 #include <context.h>
 #include <calibration/calibrator.h>

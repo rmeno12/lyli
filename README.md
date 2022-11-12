@@ -1,5 +1,7 @@
 # Lyli
 
+** NOTE: This currently does not build (at least on my system) due to conflicts between recent versions of Qt and TBB. Current goal is to fix this issue. **
+
 Lyli (*Ly*tro *Li*nux) aims to provide an open source alternative to the Lytro Desktop. Currently, it allows to download images from the camera (in their .raw and .json form), and perform basic calibration.
 
 The application has been tested only with the 1st generation Lytro camera.

@@ -1,7 +1,7 @@
 file(GLOB_RECURSE sources *.cpp)
 
 add_library(lyli SHARED ${sources})
-target_link_libraries(lyli ${USBPP_LIBRARIES} ${OpenCV_LIBS} ${LIBUSB_LIBRARIES} ${JsonCpp_LIBRARIES} pthread ${TBB_LIBRARIES})
+target_link_libraries(lyli ${USBPP_LIBRARIES} ${OpenCV_LIBS} ${LIBUSB_LIBRARIES} ${JsonCpp_LIBRARIES} pthread tbb)
 install(TARGETS lyli LIBRARY DESTINATION lib)
 
 add_executable(lyli-bin main.cpp)

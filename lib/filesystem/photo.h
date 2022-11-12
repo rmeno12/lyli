@@ -22,6 +22,7 @@
 
 #include <ctime>
 #include <memory>
+#include <array>
 
 namespace Lyli {
 namespace Filesystem {
