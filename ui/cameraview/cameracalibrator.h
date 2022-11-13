@@ -45,7 +45,7 @@ public:
 	CameraCalibrator(const CameraCalibrator& other) = delete;
 	CameraCalibrator& operator=(const CameraCalibrator& other) = delete;
 
-public slots:
+public Q_SLOTS:
 	void onCameraChanged(Lyli::Camera* camera);
 
 private:

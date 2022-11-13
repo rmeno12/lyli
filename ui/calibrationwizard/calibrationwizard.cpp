@@ -75,7 +75,7 @@ void CalibrationWizardPageCacheDir::selectDirectory() {
 	if (!cacheDir.isEmpty()) {
 		m_ui->path->setText(cacheDir);
 	}
-	emit completeChanged();
+	Q_EMIT completeChanged();
 }
 
 CalibrationWizardPageFinish::CalibrationWizardPageFinish(QWidget *parent) : QWizardPage(parent) {

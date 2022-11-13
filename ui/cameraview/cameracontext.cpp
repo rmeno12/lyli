@@ -28,7 +28,7 @@ Context::~Context() {
 
 void Context::updateCameraList() {
 	m_cameraList = m_context.getCameras();
-	emit cameraListChanged();
+	Q_EMIT cameraListChanged();
 }
 
 Lyli::CameraList::size_type Context::getCameraCount() const {
@@ -45,7 +45,7 @@ Lyli::Camera* Context::getCamera(Lyli::CameraList::size_type index) {
 void Context::changeCurrentCamera(Lyli::CameraList::size_type index) {
 	if (m_current < 0 || (static_cast<Lyli::CameraList::size_type>(m_current) != index && index < m_cameraList.size())) {
 		m_current = index;
-		emit cameraChanged(&(m_cameraList[m_current]));
+		Q_EMIT cameraChanged(&(m_cameraList[m_current]));
 	}
 }
 

@@ -46,7 +46,7 @@ CameraForm::CameraForm(QWidget *parent) : QWidget(parent) {
 	// set the delegates
 	ui->imageList->setItemDelegate(new ImageListDelegate);
 
-	// connect signals & slots
+	// connect Q_SIGNALS & Q_SLOTS
 	connect(ui->cameraList, &QListView::activated, this, &CameraForm::onCameraChanged);
 	connect(ui->buttonDownloadAll, &QToolButton::clicked, this, &CameraForm::onDownloadAll);
 	connect(ui->buttonDownloadSelected, &QToolButton::clicked, this, &CameraForm::onDownloadSelected);
@@ -82,17 +82,17 @@ void CameraForm::onDownloadSelected() {
 void CameraForm::onDownloadStarted(int files) {
 	ui->buttonDownloadAll->setEnabled(false);
 	ui->buttonDownloadSelected->setEnabled(false);
-	emit progressStart(files);
+	Q_EMIT progressStart(files);
 }
 
 void CameraForm::onDownloadRunning(int progress) {
-	emit progressRun(progress);
+	Q_EMIT progressRun(progress);
 }
 
 void CameraForm::onDownloadFinished() {
 	ui->buttonDownloadAll->setEnabled(true);
 	ui->buttonDownloadSelected->setEnabled(true);
-	emit progressFinish();
+	Q_EMIT progressFinish();
 }
 
 void CameraForm::download(DownloadMode mode) {

@@ -51,5 +51,5 @@ MainWindow::~MainWindow() {
 
 void MainWindow::showEvent(QShowEvent *event) {
 	QWidget::showEvent(event);
-	emit windowShown();
+	Q_EMIT windowShown();
 }

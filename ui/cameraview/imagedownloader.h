@@ -30,22 +30,22 @@ public:
 	ImageDownloader(ImageListModel *model, const QModelIndexList &indices, QString outputDir);
 	virtual ~ImageDownloader();
 
-public slots:
+public Q_SLOTS:
 	void onDownloadAll();
 	void onDownloadSelected();
 
-signals:
-	/** Signal emitted when the download starts.
+Q_SIGNALS:
+	/** Signal Q_EMITted when the download starts.
 	 *
 	 * @param files the total number of files to be downloaded
 	 */
 	void started(int files);
-	/** Signal emitted during the download to update the progress.
+	/** Signal Q_EMITted during the download to update the progress.
 	 *
 	 * @param progress the order of the currently downloaded file
 	 */
 	void progress(int progress);
-	/** Signal emitted when the download finishes.
+	/** Signal Q_EMITted when the download finishes.
 	 *
 	 */
 	void finished();

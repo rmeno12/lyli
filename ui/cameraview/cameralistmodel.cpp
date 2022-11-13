@@ -51,5 +51,5 @@ int CameraListModel::rowCount(const QModelIndex& parent) const {
 }
 
 void CameraListModel::cameraListChanged() {
-	emit dataChanged(index(0, 0), index(rowCount(), 0));
+	Q_EMIT dataChanged(index(0, 0), index(rowCount(), 0));
 }

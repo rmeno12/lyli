@@ -41,7 +41,7 @@ public:
 	ViewerForm(QWidget *parent = nullptr);
 	~ViewerForm();
 
-public slots:
+public Q_SLOTS:
 	void directoryViewClicked(const QModelIndex &index);
 	void fileViewClicked(const QModelIndex &index);
 

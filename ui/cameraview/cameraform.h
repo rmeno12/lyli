@@ -41,15 +41,15 @@ public:
 	CameraForm(QWidget *parent = nullptr);
 	~CameraForm();
 
-signals:
+Q_SIGNALS:
 	void progressStart(int files);
 	void progressRun(int progress);
 	void progressFinish();
 
-public slots:
+public Q_SLOTS:
 	void onInit();
 
-private slots:
+private Q_SLOTS:
 	void onCameraChanged(const QModelIndex& index);
 	void onDownloadAll();
 	void onDownloadSelected();

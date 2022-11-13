@@ -39,7 +39,7 @@ public:
 	MainWindow();
 	~MainWindow();
 
-signals:
+Q_SIGNALS:
 	void windowShown();
 
 protected:

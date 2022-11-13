@@ -58,7 +58,7 @@ public:
 
 	virtual bool isComplete() const override;
 
-public slots:
+public Q_SLOTS:
 	void selectDirectory();
 
 private:

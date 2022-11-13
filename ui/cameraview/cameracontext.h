@@ -43,13 +43,13 @@ public:
 	 */
 	Lyli::Camera* getCamera(Lyli::CameraList::size_type index);
 
-public slots:
+public Q_SLOTS:
 	/**
 	 * Change the currently selected camera
 	 */
 	void changeCurrentCamera(Lyli::CameraList::size_type index);
 
-signals:
+Q_SIGNALS:
 	/**
 	 * Camera has changed
 	 * \param camera pointer to a new camera

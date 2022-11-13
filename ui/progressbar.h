@@ -27,7 +27,7 @@ class ProgressBar : public QWidget {
 public:
 	ProgressBar(QWidget *parent = nullptr);
 	~ProgressBar();
-public slots:
+public Q_SLOTS:
 	void onProgressStart(int files);
 	void onProgress(int progress);
 	void onProgressFinish();

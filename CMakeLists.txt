@@ -12,7 +12,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS true)
 # GUI (optional)
 find_package(Qt5Core)
 find_package(Qt5Widgets)
-# add_definitions(-DQT_NO_KEYWORDS)
+add_definitions(-DQT_NO_KEYWORDS)
 
 # minimal dependencies
 find_package(JsonCpp REQUIRED 1.4.0)
