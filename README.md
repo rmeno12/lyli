@@ -1,6 +1,6 @@
 # Lyli
 
-** NOTE: This currently does not build (at least on my system) due to conflicts between recent versions of Qt and TBB. Current goal is to fix this issue. **
+**NOTE: This currently does build, but you must install libusbpp manually and provide appropriate environment variables to link against it. Instructions for this coming soon.**
 
 Lyli (*Ly*tro *Li*nux) aims to provide an open source alternative to the Lytro Desktop. Currently, it allows to download images from the camera (in their .raw and .json form), and perform basic calibration.
 
